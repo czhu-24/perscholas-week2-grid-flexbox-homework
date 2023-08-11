@@ -1,0 +1,25 @@
+h1 {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+#grid-container {
+    display: grid;
+    grid-template-columns: 1fr 200px;
+    grid-template-rows: 100px 100px 1fr 100px;
+}
+
+#grid-container > * {
+    border: 2px solid blue;
+    
+}
+
+#grid-container > h1 {
+    grid-column: span 2;
+}
+
+#nav-and-search {
+    grid-column: span 2; 
+    /* what's the diff btwn grid-template-column and grid-column ??? */
+}
+
+
