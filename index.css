@@ -9,14 +9,20 @@ body > * {
 }
 
 h1 {
+    display: flex; 
+    align-items: center;
+    justify-content: center;
     color: white;
-    background-color: gray;
+    background: gray;
+    border: none;
+    margin: 0;
 }
 
 #grid-container {
     display: grid;
     grid-template-columns: 1fr 200px;
     grid-template-rows: 100px 100px 1fr 100px;
+
 }
 
 #grid-container h2 {
@@ -47,11 +53,16 @@ h1 {
 
 #nav-and-search {
     grid-column: span 2; 
+    display: flex;
+    background-color: #f11ee0;
+    justify-content: space-evenly;
+    align-items: center;
     /* what's the diff btwn grid-template-column and grid-column ??? */
 }
 
 #grid-container > footer {
-    margin: 0 auto;
+    align-self: center;
+    border: none;
 }
 
 
